@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./validate.js"></script>
+    </head>
+    <body>
+        <h2>Register Form</h2>
+        <form name="RegisterForm" action="MainController" method="POST">
+            <label>Email</label> 
+            <input type="text" name="txtUserID" id="userID"/> <br/> <br/>
+
+            <label>Password</label> 
+            <input type="password" name="txtPassword" id="pass"/> <br/> <br/>
+
+            <label>Confirm Password</label> 
+            <input type="password" name="txtConfirmPassword" id="conPass"/> <br/> <br/>
+
+            <label>Name</label> 
+            <input type="text" name="txtName" id="name"/> <br/> <br/>
+
+            <label>Phone</label> 
+            <input type="text" name="txtPhone" id="phone"/> <br/> <br/>
+
+            <label>Address</label> 
+            <input type="text" name="txtAddress" id="address"/> <br/> <br/>
+
+            <input type="submit" value="Register" name="btnAction" onclick="return validateForm()"/>
+        </form>
+    </body>
+</html>
